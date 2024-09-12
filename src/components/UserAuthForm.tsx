@@ -92,7 +92,7 @@ const UserAuthForm = () => {
             </FormItem>
           )}
         />
-        <Button className="w-full border border-gray-100 hover:bg-gray-50 bg-zinc-100 text-zinc-800" type="submit" disabled={isLoading}>
+        <Button className="w-full border border-gray-50 hover:bg-gray-50 bg-zinc-1200 text-white-800" type="submit" disabled={isLoading}>
           {isLoading && (
             <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />
           )}
