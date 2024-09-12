@@ -31,7 +31,7 @@ const formSchema = z.object({
 
 const UserAuthForm = () => {
   const [isLoading, setIsLoading] = useState(false)
-  const { username, isLogin, setUsername, setIsLogin } = useGlobalContext()
+  const { isLogin, setUsername, setIsLogin } = useGlobalContext()
   const router = useRouter()
 
   // Set up the form using react-hook-form and zod for validation
@@ -92,7 +92,7 @@ const UserAuthForm = () => {
             </FormItem>
           )}
         />
-        <Button className='w-full border border-gray-100 hover:bg-gray-50' type='submit' variant='zinc' disabled={isLoading}>
+        <Button className="w-full border border-gray-100 hover:bg-gray-50 bg-zinc-100 text-zinc-800" type="submit" disabled={isLoading}>
           {isLoading && (
             <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />
           )}
